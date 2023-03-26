@@ -1,0 +1,32 @@
+\usepackage[a4paper, margin=1.25cm]{geometry}
+
+\usepackage{enumitem}
+\usepackage[fixed]{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+
+\setlength\parindent{0em}
+\raggedright
+
+\setlist{nosep}
+\setlist[itemize]{leftmargin=2em}
+
+% Sans-serif font
+\renewcommand{\familydefault}{\sfdefault}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2ex}\bfseries\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-0.5ex}]
+
+% Custom commands
+\newcommand*{\site}[1]{{\footnotesize\faGlobe} \href{https://#1}{#1}}
+\newcommand*{\github}[1]{{\footnotesize\faGithub} \href{https://github.com/#1}{github.com/#1}}
+\newcommand*{\linkedin}[1]{{\footnotesize\faLinkedin} \href{https://linkedin.com/in/#1}{linkedin.com/in/#1}}
+
+\newcommand*{\entry}[3]{\textbf{\large #1} \enskip \textit{#2} \hfill #3}
+\newcommand*{\entrysep}{\vspace{1.5ex}}
