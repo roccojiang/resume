@@ -28,5 +28,7 @@
 \newcommand*{\github}[1]{{\footnotesize\faGithub} \href{https://github.com/#1}{github.com/#1}}
 \newcommand*{\linkedin}[1]{{\footnotesize\faLinkedin} \href{https://linkedin.com/in/#1}{linkedin.com/in/#1}}
 
-\newcommand*{\entry}[3]{\textbf{\large #1} \enskip \textit{#2} \hfill #3}
+\newcommand*{\heading}[1]{\textbf{\large #1}}
+\newcommand*{\descriptor}[2]{\textit{#1} \hfill #2}
+\newcommand*{\entry}[3]{\heading{#1} \enskip \descriptor{#2}{#3}}
 \newcommand*{\entrysep}{\vspace{1.5ex}}
